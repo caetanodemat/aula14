@@ -1,0 +1,41 @@
+.container {
+    display: grid;
+    grid-template-columns: repeat(5, 100px);
+    grid-template-rows: repeat(3, 100px);
+    grid-template-areas: 
+    "nav nav header header header"
+    "nav nav serviços serviços aside"
+    "produtos produtos serviços serviços footer";
+    gap: 10px;
+
+}
+.nav {
+    background-color: aquamarine;
+    grid-area: nav;
+    border-radius: 10px;
+}
+.header {
+    background-color: brown;
+    grid-area: header;
+    border-radius: 10px;
+}
+.produtos {
+    background-color: yellowgreen;
+    grid-area: produtos;
+    border-radius: 10px;
+}
+.serviços {
+    background-color: red;
+    grid-area: serviços;
+    border-radius: 10px;
+}
+.aside {
+    background-color: pink;
+    grid-area: aside;
+    border-radius: 10px;
+}
+.footer {
+    background-color: orange;
+    grid-area: footer;
+    border-radius: 10px;
+}
